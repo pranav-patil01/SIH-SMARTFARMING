@@ -1,0 +1,99 @@
+{
+  "app": {
+    "title": "AgriSense AI",
+    "subtitle": "Smart India Hackathon 2026",
+    "tagline": "ET₀-Based Autonomous Precision Irrigation with ESP32 Edge Safety",
+    "sim_badge": "Simulation — illustrative values",
+    "start_tour": "Start Guided Tour",
+    "free_explore": "Free Explore Mode",
+    "language": "Language",
+    "shortcuts": "Keyboard Shortcuts",
+    "reset": "Reset Simulation"
+  },
+  "hud": {
+    "et0_today": "Reference ET₀ Today",
+    "soil_moisture": "Soil Moisture",
+    "pump_status": "Main Pump",
+    "tank_level": "Tank Storage",
+    "connectivity": "Edge Link",
+    "water_saved": "Water Conserved",
+    "energy_saved": "Energy Conserved",
+    "ml_confidence": "ML Confidence",
+    "online": "ONLINE (MQTT)",
+    "offline": "OFFLINE (ESP32 LOCAL)",
+    "pump_on": "PUMP ACTIVE (600 L/min)",
+    "pump_off": "PUMP IDLE",
+    "weather": "Weather Conditions",
+    "decision_card": "Cloud Decision & AI Recommendation"
+  },
+  "scenarios": {
+    "title": "Interactive Edge Scenarios",
+    "heatwave": "1. Heatwave & Dry Spell",
+    "rain_forecast": "2. Rain Forecast Skip",
+    "pipe_leak": "3. Pipe Leak Isolation",
+    "pump_dry_run": "4. Borewell Dry-Run Trip",
+    "internet_outage": "5. Offline Edge Mode",
+    "water_scarcity": "6. Water Scarcity Ranking",
+    "sensor_drift": "7. Sensor Fault Detection",
+    "manual_override": "8. App Manual Override",
+    "reset": "Reset to Normal"
+  },
+  "phone": {
+    "app_title": "AgriSense Farmer",
+    "tab_recommend": "Today",
+    "tab_dashboard": "Savings",
+    "tab_zones": "Zones",
+    "tab_alerts": "Alerts",
+    "tab_control": "Control",
+    "tab_reports": "Reports",
+    "soil_health": "Soil Health Status",
+    "action_irrigate": "Recommended Action",
+    "next_irrigation": "Next Irrigation Window",
+    "manual_pump_btn": "Emergency Pump Toggle",
+    "sms_alert_badge": "SMS Alert Delivered"
+  },
+  "tour": {
+    "step_of": "Step {current} of {total}",
+    "next": "Next Step →",
+    "back": "← Back",
+    "skip": "Skip Tour",
+    "steps": [
+      {
+        "title": "1. The Challenge: Water Crisis in Agriculture",
+        "description": "Traditional fixed-interval irrigation wastes up to 45% of groundwater and risks pump coil burnouts during dry borewell spells."
+      },
+      {
+        "title": "2. Precision Field Zoning",
+        "description": "The 60×60m farm is partitioned into micro-zones: Wheat (Zone 1), Sugarcane (Zone 2), and Vegetables (Zone 3), each with individual drip manifolds."
+      },
+      {
+        "title": "3. Low-Cost IoT Sensor Nodes",
+        "description": "FC-28 capacitive probes, DHT22 ambient sensors, inline YF-S201 flow meters, and ACS712 current sensors capture telemetry every minute."
+      },
+      {
+        "title": "4. ESP32 Edge Gateway & Safety",
+        "description": "The IP65 field controller runs dual-core ESP32 firmware with local sub-second safety interlocks, SD card logging, and SIM800L cellular fallback."
+      },
+      {
+        "title": "5. MQTT Cloud Uplink",
+        "description": "Lightweight telemetry packets stream over MQTT to the cloud backend for real-time analytics and predictive irrigation modeling."
+      },
+      {
+        "title": "6. Cloud AI & ET₀ Decision Engine",
+        "description": "Calculates ET₀ via Hargreaves formula, factors in crop Kc and monsoon rain forecast, and generates optimal watering schedules."
+      },
+      {
+        "title": "7. Downlink Execution & Feedback Loop",
+        "description": "Actuation commands open solenoid valves and engage the motor contactor. Live sensor feedback verifies flow and soil absorption."
+      },
+      {
+        "title": "8. Fail-Safe Sub-second Protection",
+        "description": "Borewell dry-runs and line ruptures are isolated by the ESP32 in < 2 seconds without requiring cloud connectivity."
+      },
+      {
+        "title": "9. Impact & SDG Alignment",
+        "description": "AgriSense achieves 38% water savings and 36% energy reduction, directly advancing UN SDG 2 (Zero Hunger), SDG 6 (Clean Water), and SDG 12/13."
+      }
+    ]
+  }
+}
